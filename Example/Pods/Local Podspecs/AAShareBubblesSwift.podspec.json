@@ -1,0 +1,22 @@
+{
+  "name": "AAShareBubblesSwift",
+  "version": "0.1.0",
+  "summary": "A short description of AAShareBubblesSwift.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/O-Junpei/AAShareBubblesSwift",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "O-Junpei": "snorlax.chemist.and.jazz@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/O-Junpei/AAShareBubblesSwift.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "AAShareBubblesSwift/Classes/**/*"
+}

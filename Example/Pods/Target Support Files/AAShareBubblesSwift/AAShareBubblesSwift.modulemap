@@ -1,0 +1,6 @@
+framework module AAShareBubblesSwift {
+  umbrella header "AAShareBubblesSwift-umbrella.h"
+
+  export *
+  module * { export * }
+}

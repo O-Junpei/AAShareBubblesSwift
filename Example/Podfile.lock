@@ -1,0 +1,22 @@
+PODS:
+  - AAShareBubblesSwift (0.1.0)
+  - Nimble (5.1.1)
+  - Quick (1.0.0)
+
+DEPENDENCIES:
+  - AAShareBubblesSwift (from `../`)
+  - Nimble (~> 5.1.1)
+  - Quick (~> 1.0.0)
+
+EXTERNAL SOURCES:
+  AAShareBubblesSwift:
+    :path: ../
+
+SPEC CHECKSUMS:
+  AAShareBubblesSwift: 14c8360c67a9e7cb79f4602209f655b708985a74
+  Nimble: 415e3aa3267e7bc2c96b05fa814ddea7bb686a29
+  Quick: 8024e4a47e6cc03a9d5245ef0948264fc6d27cff
+
+PODFILE CHECKSUM: a45a36800090f7b2462970c896c846d746d935cb
+
+COCOAPODS: 1.2.0
