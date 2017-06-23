@@ -1,16 +1,24 @@
 //
-//  Extension.swift
+//  ShareBubbleButton.swift
 //  AAShareBubblesSwift
 //
 //  Created by junpei ono on 2017/06/23.
 //
 
-import Foundation
 import UIKit
 
-/*
+class ShareBubbleButton: UIButton {
 
-typealias UIButtonTargetClosure = (UIButton) -> ()
+    /*
+    // Only override draw() if you perform custom drawing.
+    // An empty implementation adversely affects performance during animation.
+    override func draw(_ rect: CGRect) {
+        // Drawing code
+    }
+    */
+    
+}
+typealias UIButtonTargetClosure = (ShareBubbleButton) -> ()
 
 class ClosureWrapper: NSObject {
     let closure: UIButtonTargetClosure
@@ -19,8 +27,7 @@ class ClosureWrapper: NSObject {
     }
 }
 
-
-extension UIButton {
+extension ShareBubbleButton {
     
     private struct AssociatedKeys {
         static var targetClosure = "targetClosure"
@@ -39,7 +46,7 @@ extension UIButton {
     
     func addTargetClosure(closure: @escaping UIButtonTargetClosure) {
         targetClosure = closure
-        addTarget(self, action: #selector(UIButton.closureAction), for: .touchUpInside)
+        addTarget(self, action: #selector(ShareBubbleButton.closureAction), for: .touchUpInside)
     }
     
     func closureAction() {
@@ -47,4 +54,4 @@ extension UIButton {
         targetClosure(self)
     }
 }
-*/
+

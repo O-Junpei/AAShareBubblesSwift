@@ -9,8 +9,8 @@ import UIKit
 
 public class AAShareBubblesSwift: NSObject {
     
-    let baseView:UIButton = UIButton()
-    var buttons:[UIButton] = Array()
+    let baseView:ShareBubbleButton = ShareBubbleButton()
+    var buttons:[ShareBubbleButton] = Array()
     public let testBun:UIButton = UIButton()
     
     override public init() {
@@ -36,37 +36,35 @@ public class AAShareBubblesSwift: NSObject {
         
         baseView.addSubview(contentView)
         
-        /*
-        testBun.frame = CGRect(x: 50, y: 150, width: 200, height: 40)
-        testBun.backgroundColor = UIColor.red
         
-        testBun.addTargetClosure{_ in
-            
-            self.hideView()
-        }
-        baseView.addSubview(testBun)
- 
- */
+        let myBoundSize: CGSize = UIScreen.main.bounds.size
         
-        for btn in buttons{
-            let random = arc4random() % 200
-            let rando2 = arc4random() % 200
+        for i in 0..<buttons.count {
             
-            btn.frame = CGRect(x: CGFloat(random), y: CGFloat(rando2), width: 40, height: 40)
-            btn.addTargetClosure{_ in
+            buttons[i].frame = CGRect(x: myBoundSize.width/2, y: myBoundSize.height/2, width: 40, height: 40)
+            buttons[i].addTargetClosure{_ in
                 
                 self.hideView()
             }
-            baseView.addSubview(btn)
+            baseView.addSubview(buttons[i])
+            
+            UIView.animate(withDuration: 1.0, delay: 0.0, options: .autoreverse, animations: {
+                self.buttons[i].frame = CGRect(x: myBoundSize.width/5, y: myBoundSize.height/5, width: 40, height: 40)
+            }, completion: nil)
+            
+            
+            
         }
+        
     }
     
     
     
-    public func addCustomButton(){
+    public func addCustomButton(_ target: Any?, action: Selector, for controlEvents: UIControlEvents){
         
-        let addButton:UIButton = UIButton()
+        let addButton:ShareBubbleButton = ShareBubbleButton()
         addButton.backgroundColor = UIColor.orange
+        addButton.addTarget(target, action: action, for: controlEvents)
         buttons.append(addButton)
     }
     public func hideView(){
@@ -78,4 +76,8 @@ public class AAShareBubblesSwift: NSObject {
         print("printNOw")
         
     }
+    
+    
+    
+    
 }
