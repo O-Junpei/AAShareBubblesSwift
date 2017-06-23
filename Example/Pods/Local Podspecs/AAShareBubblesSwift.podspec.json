@@ -1,8 +1,8 @@
 {
   "name": "AAShareBubblesSwift",
   "version": "0.1.0",
-  "summary": "A short description of AAShareBubblesSwift.",
-  "description": "TODO: Add long description of the pod here.",
+  "summary": "Animated Social share buttons control for iOS",
+  "description": "This library is mixdesign/AAShareBubbles written by Swift",
   "homepage": "https://github.com/O-Junpei/AAShareBubblesSwift",
   "license": {
     "type": "MIT",
