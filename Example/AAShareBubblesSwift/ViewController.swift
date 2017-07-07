@@ -9,7 +9,7 @@
 import UIKit
 import AAShareBubblesSwift
 
-class ViewController: UIViewController,AAShareBubbleDelegate {
+class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,7 +27,7 @@ class ViewController: UIViewController,AAShareBubbleDelegate {
     internal func cornerCircleButtonClicked(sender: UIButton){
         
         let aaa:AAShareBubblesSwift = AAShareBubblesSwift()
-        aaa.delegate = self
+        aaa.addCustomButton(self, action: #selector(testBunClicked(sender:)), for: .touchUpInside)
         //aaa.addCustomButton()
         //aaa.addCustomButton()
         aaa.show()
@@ -38,15 +38,5 @@ class ViewController: UIViewController,AAShareBubbleDelegate {
     public func testBunClicked(sender: UIButton){
         print("yosshi")
     }
-    
-    func aaShareBubblesTapped(){
-    
-    }
-    
-    func aaShareBubblesDidHide(){
-        
-    }
-    
-
 }
 

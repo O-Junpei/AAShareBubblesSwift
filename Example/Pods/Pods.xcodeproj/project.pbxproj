@@ -15,6 +15,8 @@
 		5F87BC8D1DA5B42D7270B983C0F1A619 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
 		857A8535E0B295D958C04C53BC79834E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
 		8D86A7991EFCD0060031F983 /* AAShareBubblesSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D86A7981EFCD0060031F983 /* AAShareBubblesSwift.swift */; };
+		8D86A79B1EFCD17C0031F983 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D86A79A1EFCD17C0031F983 /* Extension.swift */; };
+		8D86A79D1EFCDCDF0031F983 /* ShareBubbleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D86A79C1EFCDCDF0031F983 /* ShareBubbleButton.swift */; };
 		A1DA93598723DC55670796809227F3E4 /* Pods-AAShareBubblesSwift_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 940453F44FC21E9F96707915DEF31704 /* Pods-AAShareBubblesSwift_Tests-dummy.m */; };
 		B4156E5BB2468EB6F4CD185CA60200D7 /* AAShareBubblesSwift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 65E40BCFA534D500CED6575C02EE60E8 /* AAShareBubblesSwift-dummy.m */; };
 /* End PBXBuildFile section */
@@ -50,6 +52,8 @@
 		871D8800D9D97B5A4C9285C842FDFF2E /* Pods-AAShareBubblesSwift_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-AAShareBubblesSwift_Example-umbrella.h"; sourceTree = "<group>"; };
 		8B8C39BDDAF95F6BFE093F63E8B7C22E /* AAShareBubblesSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AAShareBubblesSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D86A7981EFCD0060031F983 /* AAShareBubblesSwift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AAShareBubblesSwift.swift; sourceTree = "<group>"; };
+		8D86A79A1EFCD17C0031F983 /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
+		8D86A79C1EFCDCDF0031F983 /* ShareBubbleButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareBubbleButton.swift; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		940453F44FC21E9F96707915DEF31704 /* Pods-AAShareBubblesSwift_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-AAShareBubblesSwift_Tests-dummy.m"; sourceTree = "<group>"; };
 		983E4A7622D5DBB3F0EB2278C4BC15F0 /* AAShareBubblesSwift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = AAShareBubblesSwift.modulemap; sourceTree = "<group>"; };
@@ -132,6 +136,8 @@
 			isa = PBXGroup;
 			children = (
 				8D86A7981EFCD0060031F983 /* AAShareBubblesSwift.swift */,
+				8D86A79C1EFCDCDF0031F983 /* ShareBubbleButton.swift */,
+				8D86A79A1EFCD17C0031F983 /* Extension.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -353,6 +359,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8D86A79B1EFCD17C0031F983 /* Extension.swift in Sources */,
+				8D86A79D1EFCDCDF0031F983 /* ShareBubbleButton.swift in Sources */,
 				B4156E5BB2468EB6F4CD185CA60200D7 /* AAShareBubblesSwift-dummy.m in Sources */,
 				8D86A7991EFCD0060031F983 /* AAShareBubblesSwift.swift in Sources */,
 			);
