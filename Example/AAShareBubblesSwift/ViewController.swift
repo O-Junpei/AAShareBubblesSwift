@@ -27,7 +27,14 @@ class ViewController: UIViewController {
     internal func cornerCircleButtonClicked(sender: UIButton){
         
         let aaa:AAShareBubblesSwift = AAShareBubblesSwift()
+        //aaa.bubbleRadius = 100
         aaa.addCustomButton(self, action: #selector(testBunClicked(sender:)), for: .touchUpInside)
+        aaa.addCustomButton(self, action: #selector(testBunClicked(sender:)), for: .touchUpInside)
+        aaa.addCustomButton(self, action: #selector(testBunClicked(sender:)), for: .touchUpInside)
+        aaa.addCustomButton(self, action: #selector(testBunClicked(sender:)), for: .touchUpInside)
+        //aaa.addCustomButton(self, action: #selector(testBunClicked(sender:)), for: .touchUpInside)
+        //aaa.addCustomButton(self, action: #selector(testBunClicked(sender:)), for: .touchUpInside)
+
         //aaa.addCustomButton()
         //aaa.addCustomButton()
         aaa.show()
@@ -35,7 +42,7 @@ class ViewController: UIViewController {
         
     }
     
-    public func testBunClicked(sender: UIButton){
+    func testBunClicked(sender: UIButton){
         print("yosshi")
     }
 }
